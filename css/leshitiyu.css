@@ -1,0 +1,1083 @@
+
+*{
+    /*清除浏览器默认样式*/
+    padding: 0;
+    margin: 0;
+    font-family: Arial, 'Times New Roman', 'Microsoft YaHei', SimHei;
+    -webkit-align-content: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+ul {
+    /*清除ul的默认样式*/
+    list-style: none;
+}
+
+a {
+    /*清除a标签的下划线*/
+    text-decoration: none;
+}
+
+/*logo 标题*/
+.LoGo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 190px;
+    z-index: 50;
+}
+
+.LoGo div {
+    height: 62px;
+    text-align: right;
+    background: #ef3b31;
+    line-height: 62px;
+    margin-right: 36px;
+}
+
+.LoGo div a {
+    color: #fff;
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    background-image: url("../img/common_z.png");
+    background-position: 0 -202px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.LoGo span {
+    width: 36px;
+    height: 62px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("../img/common_z.png");
+    background-position: -60px -78px;
+}
+
+/*导航栏主体*/
+#sport_nav {
+    width: 100%;
+    position: absolute;
+    /*padding-top: 12px;*/
+    min-width: 1200px;
+    z-index: 4100;
+    height: 60px;
+    top: 0;
+}
+
+/*日历上边框*/
+.calendar_top {
+    background: url("../img/common_z.png") no-repeat;
+    background-position: -246px -374px;
+    width: 160px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 48%;
+
+    margin-left: -80px;;
+}
+
+/*日历图标*/
+.calendar {
+    width: 138px;
+    height: 73px;
+    position: absolute;
+    top: 0;
+    left: 48%;
+    background: url("../img/common_z.png");
+    background-position: 0 0;
+    margin-left: -69px;
+    z-index: 40;
+}
+
+/*导航栏*/
+.nav {
+    width: 100%;
+    height: 50px;
+    background: #ef3b31;
+    overflow: hidden;
+    position: relative;
+    margin-top: 12px;
+    z-index: 20;
+}
+.nav_banner{
+    width: 1300px;
+    height: 50px;
+    background: #ef3b31;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    left:-355px;
+}
+.nav_banner ul{
+    float: left;
+}
+.nav li {
+    padding: 0 10px;
+    line-height: 51px;
+    height: 51px;
+}
+
+.nav li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+/*左点击按钮*/
+.nav .oBtn_left {
+    /*轮播图点击按钮开始是隐藏的*/
+    width: 17px;
+    height: 16px;
+    position: absolute;
+    top: 18px;
+    /*left: 155px;*/
+    right:905px;
+    background: url("../img/common_z.png") no-repeat;
+    background-position: -285px -180px;
+    z-index: 3;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .nav_Right li, .nav .nav_Left li{
+    float: left;
+}
+.nav_Right_Three{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+/*左边导航栏*/
+.nav .nav_Left {
+    width: 439px;
+    margin-right: 47px;
+    position: absolute;
+    right: 49%;
+}
+
+/*右边导航栏*/
+.nav_Right {
+    position: absolute;
+    left: 53%;
+    margin-left: 47px;
+}
+.nav .nav_Right_Three{
+    float: right;
+}
+.nav_Right_Three li{
+    float: left;
+}
+
+/*右边搜索栏*/
+.right_R {
+    width: 215px;
+    height: 50px;
+    line-height: 50px;
+    background: #ef3b31;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    z-index: 30;
+}
+
+/*右点击按钮*/
+.right_R .oBtn_Right {
+    width: 17px;
+    height: 16px;
+    position: absolute;
+    top: 18px;
+    right: 190px;
+    background: url("../img/common_z.png") no-repeat;
+    background-position: -307px -180px;
+    cursor: pointer;
+}
+
+/*放大镜图标*/
+.right_R .search_R {
+    background: url("../img/common_z.png") no-repeat;
+    background-position: -356px -276px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 138px;
+    top: 17px;
+}
+
+.right_R .logo_R {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    background: url("../img/common_z.png") no-repeat;
+    background-position: -163px -66px;;
+}
+
+/*乐视商城*/
+.right_R .login {
+    position: absolute;
+    right: 80px;;
+    height: 50px;
+    cursor: pointer;
+}
+
+/*登陆图标*/
+.right_R .login span {
+    width: 39px;
+    height: 38px;
+    display: inline-block;
+    margin-top: 7px;
+    background: url("../img/common_z.png") no-repeat;
+    background-position: -356px 0;
+}
+/*二级菜单*//*隐藏状态*/
+.List_Bottom {
+    background: #333;
+    width: 100%;
+    height: 44px;
+    /*display: block;*/
+    display: none;
+    z-index: 100;
+    position: absolute;
+}
+
+.List_Bottom li {
+    float: left;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 11px;
+    line-height: 44px;
+}
+
+.List_Bottom a {
+    color: #fff;
+    font-size: 12px;
+}
+
+/*中超二级菜单*/
+.List_Bottom .CSL1 {
+    position: absolute;
+    left: 261px;
+    /*display: none;*/
+    display: block;
+}
+
+/*欧洲杯二级菜单*/
+.List_Bottom .Football1 {
+    position: absolute;
+    left: 275px;
+    /*display: none;*/
+    display: block;
+}
+
+/*定位右边导航栏*/
+.nav_fixed {
+    position: fixed;
+    right: 1em;
+    top: 50%;
+    z-index: 10;
+    margin-top: -196px;
+}
+
+/*楼层信息*/
+.nav_fixed .right_nav_Bov {
+    height: 480px;
+    width: 115px;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav_fixed .right_nav_Bov .right_nav {
+    position: absolute;
+    right: 0;
+    width: 115px;
+}
+
+.right_nav li {
+    background: rgba(255, 255, 255, .2);
+    padding: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    left: 73px;
+    overflow: hidden;
+
+}
+.right_nav a{
+    width: 34px;
+    height: 30px;
+    display: block;
+}
+.right_nav .one a {
+    background: url("../img/common_2.png") no-repeat;
+    background-position: 0 -217px;
+
+}
+.right_nav .two a{
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -173px -128px;
+}
+.right_nav .thr a{
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -78px -217px;
+}
+.right_nav .four a{
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -39px -217px;
+}
+.right_nav .five a{
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -117px -217px;
+}
+.right_nav .six a{
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -226px -140px;
+}
+.right_nav .seven a{
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -156px -217px;
+}
+.right_nav .eight a{
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -195px -217px;
+}
+.right_nav .nine a{
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -265px 0;
+}
+.right_nav .ten a{
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -226px -105px;
+}
+.right_nav .eleven a{
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -265px -35px;
+}
+.right_nav .twelve a{
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -226px -70px;
+}
+.right_nav span {
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    top:7px;
+    left: 42px;
+    color: #fff;
+}
+
+.nav_fixed .t-btn {
+    top: -40px;
+}
+
+.nav_fixed .t-btn span {
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -226px -175px;
+    width: 34px;
+    height: 30px;
+    display: block;
+}
+.right_nav .eleven span{
+    font-size: 12px;
+}
+.nav_fixed .b-btn {
+    bottom: -40px;
+}
+
+.nav_fixed .b-btn span {
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -226px -70px;
+    width: 34px;
+    height: 30px;
+    display: block;
+
+}
+
+
+/*页面主体*/
+.subject {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.Gaming {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.Gaming .banner_img div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+}
+
+.Gaming .banner_img div img {
+    width: 100%;
+    height: 100%;
+}
+
+/*底下横幅轮播图 2016 7、24*/
+.bottom_banner {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    z-index: 20;
+}
+
+.inner_banner li.top_one {
+    top: 0;
+}
+
+.inner_banner {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.inner_banner li {
+    display: inline-block;
+    width: 6.34em;
+    height: 3.7em;
+    position: relative;
+    bottom: -15px;
+    cursor: pointer;
+    border: 1px solid #131516;
+}
+
+.inner_banner li img {
+    width: 100%;
+    height: 100%;
+}
+
+/*主体标题*/
+.titleS{
+    width: 57.5em;
+    /*background: rgba(0, 0, 0, .4);*/
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -28.75em;
+    bottom: 17.475em;
+    padding-bottom: 10px;
+    z-index: 300;
+}
+.titleS div {
+    width: 57.5em;
+    background: rgba(0, 0, 0, .4);
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*margin-left: -28.75em;*/
+    /*bottom: 17.475em;*/
+    /*padding-bottom: 10px;*/
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.titleS div.title_zIndex {
+    z-index: 400;
+    opacity: 1;
+}
+
+.titleS div h3 {
+    margin: .5em 1em .2em;
+    font-size: 100%;
+}
+
+.titleS div h3 a {
+    font-size: 1.5625em;
+    color: #fff;
+    display: block;
+    width: 95%;
+}
+
+/*展开标签*/
+.open {
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -138px -128px;
+    width: 30px;
+    height: 78px;
+    position: absolute;
+    left: 0;
+    bottom: 3.5em;
+    z-index: 100;
+    display: none;
+}
+
+/*中间内容主体*/
+.opaBox {
+    z-index: 20;
+    padding: .3125em 0 .5em;
+    height: 13.125em;
+    width: 57.5em;
+    position: absolute;
+    bottom: 3.5em;
+    left: 50%;
+    margin-left: -28.75em;
+}
+
+/*中间内容主体第二个盒子*/
+.two_box {
+    background: rgba(0, 0, 0, .65);
+    transform: scale(1);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*中间内容主体第三个盒子*/
+.three_box {
+    width: 50.3125em;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*中间内容阴影部分*/
+.center {
+    width: 200em;
+    position: relative;
+}
+
+/*中间内容部分*/
+.cent_tab {
+    height: 12.5em;
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+.cent_tab .m-addPic {
+    width: 16.625em;
+    height: 12.5em;
+    overflow: hidden;
+    /*所有盒子通用样式*/
+}
+
+.cent_tab h2 {
+    color: #ffa800;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*左边内容*/
+.cent_tab_left {
+    margin-right: .3em;
+    /*width: 16.625em;*/
+    /*height: 12.5em;*/
+    /*overflow: hidden;*/
+    float: left;
+}
+
+/*小标题*/
+.top_title {
+    margin-top: .25em;
+    background: #333;
+    height: 5.25em;
+}
+
+/*小标题图片*/
+.top_title_one {
+    width: 100%;
+    height: 1.25em;
+    background: #ef3b31;
+}
+
+/*小标题文字*/
+.top_title_one span {
+    display: inline-block;
+    height: 1.625em;
+    line-height: 1.625em;
+    color: #fff;
+    font-size: .75em;
+    padding-left: 1em;
+}
+
+/*小标题文字*/
+.top_title_two {
+    width: 100%;
+    height: 3.375em;
+    background: #333;
+    overflow: hidden;
+    padding-top: .6em;
+}
+
+.top_title_two .o_ne {
+    width: 2.3125em;
+    height: 2.3125em;
+    border-radius: 50%;
+    margin-left: 1.8em;
+    background: #fff;
+    position: relative;
+    float: left;
+}
+
+.top_title_two .o_ne img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.top_title_two .t_we {
+    left: 6em;
+    top: 1em;
+    font-size: .75em;
+    color: #fff;
+    width: 13.125em;
+    margin-left: 8px;
+}
+
+.top_title_two .t_we i {
+    font-style: normal;
+    margin-left: 8px;
+}
+
+.cent_tab_cent {
+    margin-right: .3em;
+    float: left;
+}
+
+.cent_tab_cent .pictureS {
+    background: #fff;
+    padding: .3125em;
+    margin-top: .25em;
+    line-height: 1.4;
+    height: 10.75em;
+}
+
+.pictureS .picture_left {
+    width: 6.7em;
+    position: relative;
+    height: 10.125em;
+    overflow: hidden;
+    float: left;
+}
+
+.picture_left a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.picture_left img {
+    width: 6.7em;
+    height: 100%;
+}
+
+.picture_left_txt {
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.pictureS .picture_right {
+    width: 8.9em;
+    overflow: hidden;
+    float: right;
+}
+
+.picture_img {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.picture_img img {
+    width: 100%;
+    height: 4.9375em;
+}
+
+.cent_tab_right {
+    margin-right: .3em;
+    float: left;
+}
+
+.cent_tab_right .PS {
+    background: #fff;
+    padding: .3125em;
+    margin-top: .25em;
+    line-height: 1.4;
+    height: 10.75em;
+}
+
+.PS .p_first {
+    font-size: .875em;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: .25em
+}
+
+.p_first a {
+    color: rgb(255, 0, 0);
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.last_p {
+    padding: 0 .25em
+}
+
+.last_p a {
+    line-height: 1.375em;
+    color: #666;
+    font-size: .75em;
+    display: inline-block;
+}
+
+.clear {
+    clear: both;
+}
+
+.Stop {
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -33px -128px;
+    width: 30px;
+    height: 78px;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    cursor: pointer;
+}
+
+.Member {
+    width: 48px;
+    height: 123px;
+    position: absolute;
+    right: -48px;
+    bottom: 0;
+}
+
+.Member a {
+    background: url("../img/common_2.png") no-repeat;
+    background-position: 0 0;
+    display: block;
+    width: 30px;
+    height: 123px;
+}
+
+.Member span {
+    background: url("../img/common_2.png") no-repeat;
+    background-position: -265px -99px;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 111px;
+    z-index: 22;
+    width: 24px;
+    height: 16px;
+}
+
+
+.opaCity{
+    width: 473px;
+    height: 570px;
+    position: fixed;
+    top: 65px;
+    left: 425px;
+    visibility: visible;
+    border: 1px solid #DEDEDE;
+    background:#fff;
+    box-shadow: 0 0 15px #c9c9c9;
+    padding: 0;
+    z-index: 9999;
+    display: none;
+}
+.opaCity .close{
+    background: url("../img/Load/ico-regi.png")no-repeat;
+    position: absolute;
+    background-position: 0 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    right: 28px;
+    top: 28px;
+    cursor: pointer;
+}
+.opaCity .Logo_top{
+    display:inline-block;
+    width: 100%;
+    height: 93px;
+    background: url("../img/landf.jpg")no-repeat;
+    margin-bottom: 15px;
+}
+.Logo_top span{
+    background: url("../img/Load/CNlogo1x.png")no-repeat;
+    display:block;
+    margin: 26px auto 10px;
+    width: 106px;
+    height: 37px;
+}
+.Logo_top p{
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
+.Land{
+    width: 381px;
+    margin: auto;
+    position: relative;
+    font-size: 14px;
+    color: #666666;
+}
+.boDY .p1{
+    padding: 8px 0;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 100%;
+}
+.boDY .Lo{
+    float: left;
+    color: #333333;
+    font-size: 18px;
+}
+.boDY .short{
+    font-size: 14px;
+    float: right;
+    color: #007aff;
+}
+.p2 li{
+    display: block;
+    zoom: 1;
+    position: relative;
+    font-size: 14px;
+    overflow: hidden;
+    height: 44px;
+    line-height: 44px;
+}
+.p2 li .b1{
+    background: url("../img/Load/lo.png")no-repeat;
+    display: inline-block;
+    float: left;
+    width: 25px;
+    height: 29px;
+    margin: 9px 0 0 8px
+}
+.p2 .P2_one,.p2 .P2_two{
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.p2 .P2_one .Lod_1{
+    left: 45px;
+    position: absolute;
+    padding: 9px 0 10px;
+    top: 0;
+    height: 25px;
+    line-height: 25px;
+    width: 270px;
+    font-size: 14px;
+    border: none;
+    color: #ccc;
+    background: transparent!important;
+    zoom: 1;
+    outline: none;
+}
+.p2 .P2_one .b2{
+    background: url("../img/Load/2.png")no-repeat;
+    display: inline-block;
+    float: right;
+    width: 32px;
+    height: 27px;
+    margin: 6px 8px;
+    cursor:pointer;
+}
+.p2 .P2_two .b3{
+    background: url("../img/Load/parsswo.png")no-repeat;
+    display: inline-block;
+    float: left;
+    width: 25px;
+    height: 29px;
+    margin: 9px 0 0 8px;
+}
+.p2 .P2_two .Lod_2{
+    position: absolute;
+    padding: 9px 0 10px;
+    top: 0;
+    left: 45px;
+    height: 25px;
+    line-height: 25px;
+    width: 270px;
+    font-size: 14px;
+    border: none;
+    color: #333333;
+    zoom: 1;
+    outline: none;
+}
+.p2 .P2_two .b4{
+    background: url("../img/Load/eye.png")no-repeat;
+    display: inline-block;
+    float: right;
+    width: 32px;
+    height: 27px;
+    margin: 16px 8px;
+    cursor:pointer;
+}
+
+.p3{
+    height: 44px;
+    line-height: 44px;
+}
+.p3 .state{
+    font-size: 12px;
+    margin-left:5px;
+}
+.p3 a{
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    color: #007aff;
+}
+.p3 i{
+    width: 1px;
+    color: #007aff;
+    display: inline-block;
+    float: right;
+    margin:0 5px;
+    height: 5px;
+}
+.Land_go{
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid #009de6;
+    background: #009de6;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+.Land_go:hover{
+    background: #007aff;
+}
+.p4{
+    margin-top: 25px;
+    position: relative;
+}
+.p4 p{
+    margin: 0 26px;
+    height: 20px;
+    border-top: 1px solid #DBDBDB;
+
+    z-index: 1;
+}
+.p4 .font_load{
+    font-size: 12px;
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    margin-left: -50px ;
+    width: 100px;
+    display: inline-block;
+    background: #fff;
+    text-align: center;
+}
+.p4 .Open_load{
+    width: 130px;
+    height: 34px;
+    padding-left: 127px;
+    overflow: hidden;
+    display: inline-block;
+}
+.p4 .open_Font{
+    font-size: 12px;
+    display: inline-block;
+    width: 43px;
+    height: 37px;
+    position: absolute;
+    top:30px;
+    right:75px;
+    cursor: pointer;
+}
+.Land_bottom{
+    /*width: 232px;*/
+    width: 100%;
+    height: 35px;
+    background: #e1e1e1;
+    position: absolute;
+    bottom:0;
+
+}
+.Land_bottom .chinese,.Land_bottom .china{
+    width: 232px;
+    height: 100%;
+    line-height: 35px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+.Land_bottom i{
+    width: 1px;
+    height: 20px;
+    line-height: 20px;
+    background: #999;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    bottom:7px;
+    left: 50%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
